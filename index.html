@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Travel Agent
+        </title>
+        <script src="https://kit.fontawesome.com/ca58501325.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div id="home" class="header">
+                <div class="nav">
+                    <ol>
+                        <li><a href="#contact">Call Us</a></li>
+                        <li><a href="#product">Our Product</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li class="logo">Travelik. </li>
+                    </ol>
+                </div>
+               
+            </div>
+            <div class="banner">
+                <h1>Your Trusted Travel Agent's</h1>
+
+                <p>Your happiness is our happiness</p>
+            </div>
+            <div class="flex-container">
+                <div class="content">
+                    <div class="slideshow">
+                        
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="section">
+                        
+                            <img src="https://i0.wp.com/playerassist.com/wp-content/uploads/2021/12/ks-img-1.jpg?fit=706%2C397&ssl=1" alt="Ini Carousel">
+                            
+                            <p>"As I'm sure you've heard many times before, the Almighty Shogun seeks Eternity — an existence beyond the dominion of thought and longing. "Abandon mortal ties, strive for an unchanging Eternity"... The Almighty Shogun's manner is always resolute, and I do not always fully grasp the meaning of her words. But this is her decision, and I trust her."</p>
+                            <div class="user">
+                                <div class="user-photo">
+                                    <img src="https://i.pinimg.com/736x/aa/28/8b/aa288bbd9a8fccf611d50290779d8fe1.jpg" alt="Ini gambar User">
+                                </div>
+                                <div class="name-user">
+                                    <p style="font-style: normal; font-weight: bold;">Kujou Sara</b></p>
+                                    <p style="opacity: 0.7;">General of the Tenryou Commission, 22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            
+                            <img src="https://placekitten.com/500/500" alt="Ini Carousel">
+                            
+                            <p>"To witness the Musou no Hitotachi and live to tell the tale is quite a remarkable feat. Even though I recognize her as our true deity with the power to change Inazuma's fate at will, if there is conflict between the two of you, then... I shall choose to side with you."</p>
+                            <div class="user">
+                                <div class="user-photo">
+                                    <img src="https://placekitten.com/50/50" alt="Ini gambar User">
+                                </div>
+                                <div class="name-user">
+                                    <p style="font-style: normal; font-weight: bold;">Kamisato Ayaka</b></p>
+                                    <p style="opacity: 0.7;">Shirasagi Himegimi, 18</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            
+                            <img src="https://placekitten.com/500/500" alt="Ini Carousel">
+                            
+                            <p>"Liburan jadi menyenangkan bersama travel Agentku"</p>
+                            <div class="user">
+                                <div class="user-photo">
+                                    <img src="https://placekitten.com/50/50" alt="Ini gambar User">
+                                </div>
+                                <div class="name-user">
+                                    <p style="font-style: normal; font-weight: bold;">Florence Hughes</b></p>
+                                    <p style="opacity: 0.7;">Rumah Tangga, 28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="article">
+                        <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service product</p>
+                        <ol class="information-list">
+                            <li>
+                                <div class="number">1</div>
+                                Your first feature, written in the form of a benefit statement
+                            </li>
+                            <li>
+                                <div class="number">2</div>
+                                Your second feature, writen in the form of a benefit statement</li>
+                            <li>
+                                <div class="number">3</div>
+                                Your Third feature, writen in the form of a benefit statement</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="aside">
+                    <div id="contact" class="contact">
+                        <h1>Contact Us</h1>
+                        <p>Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</p>
+                        <form name="form-contact" onsubmit="return validateForm()">
+                            <div class="input-form">
+                                <label for="name">Your Full Name:</label>
+                                <input type="text" name="name" class="form-input" id="name">
+                            </div>
+                            <div class="input-form">
+                                <label for="email">Your Email:</label>
+                                <input type="email" name="email" id="email" class="form-input">
+                            </div>
+                            <div class="input-form">
+                                <label for="destination">What are you interested in?</label>
+                                <select name="destination" id="destination" class="form-input">
+                                    <option value="0">-- Choose your destination --</option>
+                                    <option value="Khaenri'ah">Khaenri'ah</option>
+                                    <option value="Mondstadt">Mondstadt</option>
+                                    <option value="Liyue">Liyue</option>
+                                    <option value="Inazuma">Mondstadt</option>
+                                    <option value="Sumeru">Sumeru</option>
+                                    <option value="Fountain">Fountain</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="form-input" id="submit">SEND</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="product" class="package">
+                <h1>Our Package</h1>
+            </div>
+            <ul class="place">
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-lightbulb"></i></td>
+                           <td>
+                                <h1>Khaenri'ah</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-lightbulb"></i></td>
+                           <td>
+                                <h1>Mondstadt</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-lightbulb"></i></td>
+                           <td>
+                                <h1>Liyue</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-star"></i></td>
+                           <td>
+                                <h1>Inazuma</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-star"></i></td>
+                           <td>
+                                <h1>Sumeru</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+                <li class="item">
+                    <table>
+                        <tr">
+                           <td><i class="fa-regular fa-star"></i></td>
+                           <td>
+                                <h1>Fountain</h1>
+                                <p>Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                            </td>
+                        </tr>
+                    </table>   
+                </li>
+            </ul>
+            <div class="footer">
+                &copy; 2023 Copyright by Iqbal Prayogi
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
